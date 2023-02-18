@@ -29,12 +29,11 @@ jobs:
     - name: Run with pytest
       run: |
         python generate.py
-        - name: Commit files
     - name: Set up push
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git commit -a -m "Add changes"
+        git commit -a -m "Build"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
